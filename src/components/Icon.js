@@ -7,7 +7,8 @@ export const GithubIcon = ({ className, ...rest }) => (
     height="1em"
     viewBox="0 0 512 512"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`w-auto h-auto ${className}`}
+    preserveAspectRatio="xMinYMin slice"
   >
     <path fill="none" d="M0 0h512v512H0z" />
     <path
@@ -24,7 +25,8 @@ export const TwitterIcon = ({ className, ...rest }) => (
     height="1em"
     viewBox="0 0 256 209"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`w-auto h-auto ${className}`}
+    preserveAspectRatio="xMinYMin slice"
   >
     <path fill="none" d="M0 0h256v209H0z" />
     <path
@@ -41,7 +43,8 @@ export const LinkedInIcon = ({ className, ...rest }) => (
     height="1em"
     viewBox="0 0 256 256"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`w-auto h-auto ${className}`}
+    preserveAspectRatio="xMinYMin slice"
   >
     <path fill="none" d="M0 0h256v256H0z" />
     <g fill="none">
@@ -62,7 +65,7 @@ export const PinterestIcon = ({ className, ...rest }) => (
     height="1em"
     viewBox="0 0 256 256"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`w-auto h-auto ${className}`}
   >
     <path fill="none" d="M0 0h256v256H0z" />
     <path
@@ -79,7 +82,8 @@ export const DribbbleIcon = ({ className, ...rest }) => (
     height="1em"
     viewBox="0 0 256 256"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`w-auto h-auto ${className}`}
+    preserveAspectRatio="xMinYMin slice"
   >
     <path fill="none" d="M0 0h256v256H0z" />
     <path
@@ -100,7 +104,8 @@ export const SunIcon = ({ className, ...rest }) => (
     height="24"
     viewBox="0 0 24 24"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`w-auto h-auto ${className}`}
+    preserveAspectRatio="xMinYMin slice"
   >
     <g
       fill="none"
@@ -278,7 +283,8 @@ export const MoonIcon = ({ className, ...rest }) => (
     height="24"
     viewBox="0 0 24 24"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={`w-auto h-auto ${className}`}
+    preserveAspectRatio="xMinYMin slice"
   >
     <rect x="0" y="0" width="24" height="24" fill="rgba(255, 255, 255, 0)" />
     <g
@@ -433,8 +439,9 @@ export const CircularText = ({ className, ...rest }) => (
     height="496"
     viewBox="0 0 496 496"
     xmlSpace="preserve"
-    className={`w-full h-auto ${className}`}
+    className={`w-auto h-auto ${className}`}
     {...rest}
+    preserveAspectRatio="xMinYMin slice"
   >
     <circle
       cx="100"
@@ -452,8 +459,9 @@ export const LinkArrow = ({ className, ...rest }) => (
     width={24}
     height={24}
     viewBox="0 0 24 24"
-    className={`w-full h-auto ${className}`}
+    className={`w-auto h-auto ${className}`}
     {...rest}
+    preserveAspectRatio="xMinYMin slice"
   >
     <path fill="none" d="M0 0h24v24H0z" />
     <path
