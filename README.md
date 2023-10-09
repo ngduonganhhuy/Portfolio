@@ -49,7 +49,7 @@ Heavy rain
     </tr>
     <tr>
         <th>Temperature</th>
-        <td>25.9 °C</td><td>27 °C</td><td>25.5 °C</td><td>25.3 °C</td><td>24.8 °C</td><td>24.4 °C</td><td>24.2 °C</td><td>24.2 °C</td><td>24.6 °C</td><td>25.3 °C</td><td>26.5 °C</td><td>27.1 °C</td><td>27.8 °C</td><td>28.7 °C</td><td>28.9 °C</td><td>28.6 °C</td><td>28.3 °C</td><td>27.2 °C</td><td>26.3 °C</td><td>25.8 °C</td><td>25.4 °C</td><td>24.8 °C</td><td>24.6 °C</td><td>24.6 °C</td>
+        <td>25.9 °C</td><td>28 °C</td><td>25.5 °C</td><td>25.3 °C</td><td>24.8 °C</td><td>24.4 °C</td><td>24.2 °C</td><td>24.2 °C</td><td>24.6 °C</td><td>25.3 °C</td><td>26.5 °C</td><td>27.1 °C</td><td>27.8 °C</td><td>28.7 °C</td><td>28.9 °C</td><td>28.6 °C</td><td>28.3 °C</td><td>27.2 °C</td><td>26.3 °C</td><td>25.8 °C</td><td>25.4 °C</td><td>24.8 °C</td><td>24.6 °C</td><td>24.6 °C</td>
     </tr>
     <tr>
         <th>Wind</th>
@@ -85,4 +85,4 @@ Heavy rain
 </table>
 
 
-*Updated at: 2023-10-09T17:27:00Z*
+*Updated at: 2023-10-09T18:29:48Z*
