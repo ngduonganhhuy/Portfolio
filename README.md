@@ -53,7 +53,7 @@ Heavy rain
     </tr>
     <tr>
         <th>Wind</th>
-        <td>7.2 kph</td><td>9 kph</td><td>5.4 kph</td><td>5.8 kph</td><td>6.1 kph</td><td>4.7 kph</td><td>6.1 kph</td><td>8.3 kph</td><td>8.6 kph</td><td>7.2 kph</td><td>6.1 kph</td><td>4.3 kph</td><td>2.2 kph</td><td>3.2 kph</td><td>1.1 kph</td><td>3.6 kph</td><td>3.6 kph</td><td>4.7 kph</td><td>7.9 kph</td><td>9 kph</td><td>9 kph</td><td>8.3 kph</td><td>8.3 kph</td><td>8.3 kph</td>
+        <td>7.2 kph</td><td>3.6 kph</td><td>5.4 kph</td><td>5.8 kph</td><td>6.1 kph</td><td>4.7 kph</td><td>6.1 kph</td><td>8.3 kph</td><td>8.6 kph</td><td>7.2 kph</td><td>6.1 kph</td><td>4.3 kph</td><td>2.2 kph</td><td>3.2 kph</td><td>1.1 kph</td><td>3.6 kph</td><td>3.6 kph</td><td>4.7 kph</td><td>7.9 kph</td><td>9 kph</td><td>9 kph</td><td>8.3 kph</td><td>8.3 kph</td><td>8.3 kph</td>
     </tr>
 </table>
 
@@ -85,4 +85,4 @@ Heavy rain
 </table>
 
 
-*Updated at: 2023-10-11T17:27:28Z*
+*Updated at: 2023-10-11T18:30:23Z*
