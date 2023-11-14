@@ -1,16 +1,17 @@
 import AnimatedText from "@/components/AnimatedText";
 import { GithubIcon } from "@/components/Icon";
 import Layout from "@/components/Layout";
+import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import ykkt from "../../public/images/projects/ykkt.png";
-import gonsa from "../../public/images/projects/gonsa.png";
 import bizbookly from "../../public/images/projects/bizbookly.png";
 import bizbooklyStaff from "../../public/images/projects/bizbookly_staff.png";
+import gonsa from "../../public/images/projects/gonsa.png";
 import lady from "../../public/images/projects/lady.png";
-import { motion } from "framer-motion";
+import rpsgame from "../../public/images/projects/rpsgame.png";
+import winerydao from "../../public/images/projects/winerydao.png";
+import ykkt from "../../public/images/projects/ykkt.png";
 
 const FramerImage = motion(Image);
 
@@ -66,7 +67,7 @@ const FuturedProject = ({ type, title, summary, img, link, github }) => {
             target="_blank"
             className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
           >
-            Can&apos;t public
+            Private
           </Link>
         </div>
       </div>
@@ -84,12 +85,12 @@ const Project = ({ title, type, img, link, github }) => {
       <Link
         href={link}
         target="_blank"
-        className="w-full cursor-pointer overflow-hidden rounded-lg drop-shadow-sm"
+        className="w-full cursor-pointer overflow-hidden rounded-lg drop-shadow-sm h-80"
       >
         <FramerImage
           src={img}
           alt={title}
-          className="w-full h-auto shadow-2xl shadow-dark"
+          className="w-full h-auto shadow-2xl shadow-dark object-cover h-80"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           priority
@@ -98,7 +99,7 @@ const Project = ({ title, type, img, link, github }) => {
       </Link>
 
       <div className="w-full flex flex-col items-start justify-between ">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl lg:text-lg md:text-base text-clip">
+        <span className="text-primary dark:text-primaryDark font-medium text-xl lg:text-lg md:text-base text-clip pt-5">
           {type}
         </span>
         <Link
@@ -117,7 +118,7 @@ const Project = ({ title, type, img, link, github }) => {
             target="_blank"
             className="text-lg font-semibold underline md:text-base"
           >
-            Can&apos;t public
+            Private
           </Link>
           <Link href={""} className="w-8 md:w-6">
             <GithubIcon />
@@ -157,7 +158,9 @@ const projects = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title={"Trung Tâm Dược Phẩm"}
-                link={"/"}
+                link={
+                  "https://apps.apple.com/us/app/trung-t%C3%A2m-d%C6%B0%E1%BB%A3c-ph%E1%BA%A9m/id6451052186"
+                }
                 type={"Project"}
                 img={gonsa}
                 github={"/"}
@@ -189,6 +192,24 @@ const projects = () => {
                 link={"/"}
                 type={"Project"}
                 img={lady}
+                github={"/"}
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title={"Legend of RPS"}
+                link={"https://rpsgame.world/"}
+                type={"Project"}
+                img={rpsgame}
+                github={"/"}
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <Project
+                title={"Winery DAO"}
+                link={"https://winerydao.day/ "}
+                type={"Project"}
+                img={winerydao}
                 github={"/"}
               />
             </div>

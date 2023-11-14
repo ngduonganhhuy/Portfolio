@@ -1,5 +1,3 @@
-import * as React from "react";
-
 export const GithubIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -448,7 +446,7 @@ export const CircularText = ({ className, ...rest }) => (
       cy="50"
       r="10"
       stroke="black"
-      stroke-width="2"
+      strokeWidth="2"
       fill="bg-dark dark:bg-light"
     />
   </svg>

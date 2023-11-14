@@ -1,5 +1,5 @@
-import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
+import { useRef } from "react";
 import Lilcon from "./Lilcon";
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
@@ -55,6 +55,16 @@ const Exp = () => {
         />
 
         <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
+          <Details
+            position="Website Developer"
+            company="Playground"
+            companyLink={"https://www.playgroundx.site/"}
+            time="March 2021 – September 2021"
+            address="Q2, TP.HCM"
+            work={`● Building website landing page according to designer’s mockup on Figma, complete user-story according to BA’s arrangement and manage time to complete task on JIRA
+            ● Source Code Management and learning more about Web3
+            ●	Coding UI/UX, integration API with Redux, JWT, Scss,…`}
+          />
           <Details
             position="Mobile Developer"
             company="Exnodes"

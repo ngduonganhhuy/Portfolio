@@ -1,11 +1,11 @@
 import AnimatedText from "@/components/AnimatedText";
 import Layout from "@/components/Layout";
+import { motion, useMotionValue } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useRef } from "react";
-import article1 from "../../public/images/articles/pagination component in reactjs.jpg";
-import { motion, useMotionValue } from "framer-motion";
+import { useRef } from "react";
+import article1 from "../../public/images/articles/best_practice_writing_clean_code_with_flutter.webp";
 
 const FramerImage = motion(Image);
 
@@ -112,14 +112,14 @@ const articles = () => {
           <ul className="grid grid-cols-2 gap-16">
             <FeaturedArticle
               img={article1}
-              title={
-                "Build A Custom Pagination Component In Reactjs From Scratch"
-              }
+              title={"Best practices writing Clean Code with Flutter 💻"}
               summary={
-                "Learn how to build a custom pagination component in ReactJS from scratch. Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
+                'Learn how to writing clean code with Flutter and can answer the question: "Why clean code with Flutter"'
               }
               time={"9 min read"}
-              link={"/"}
+              link={
+                "https://dev.to/glopgeek/best-practices-writing-clean-code-with-flutter-501m"
+              }
             />
             <FeaturedArticle
               img={article1}
