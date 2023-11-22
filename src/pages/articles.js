@@ -121,28 +121,17 @@ const articles = () => {
                 "https://dev.to/glopgeek/best-practices-writing-clean-code-with-flutter-501m"
               }
             />
-            <FeaturedArticle
-              img={article1}
-              title={
-                "Build A Custom Pagination Component In Reactjs From Scratch"
-              }
-              summary={
-                "Learn how to build a custom pagination component in ReactJS from scratch. Follow this step-by-step guide to integrate Pagination component in your ReactJS project."
-              }
-              time={"9 min read"}
-              link={"/"}
-            />
           </ul>
           <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
             All Articles
           </h2>
           <ul>
             <Article
-              title={
-                "Form Validation In Reactjs: Build A Reusable Custom Hook For Inputs And Error Handling"
+              title={"Best practices writing Clean Code with Flutter 💻"}
+              date={"October 30, 2023"}
+              link={
+                "https://dev.to/glopgeek/best-practices-writing-clean-code-with-flutter-501m"
               }
-              date={"March 22, 2023"}
-              link={"/"}
               img={article1}
             />
           </ul>
