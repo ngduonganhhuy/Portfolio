@@ -2,11 +2,13 @@
   "name": "developer-portfolio-starter-code",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://holmes.id.vn",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "NODE_ENV=production node server.js",
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",

@@ -77,7 +77,7 @@ const Exp = () => {
             ●	Configuration for building app on Android and IOS`}
           />
           <Details
-            position="GMO Runsystem "
+            position="Mobile Developer"
             company="Runsystem"
             companyLink={"https://runsystem.net/vi/"}
             time="September 2022 - Present"

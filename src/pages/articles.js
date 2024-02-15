@@ -112,7 +112,18 @@ const articles = () => {
           <ul className="grid grid-cols-2 gap-16">
             <FeaturedArticle
               img={article1}
-              title={"Best practices writing Clean Code with Flutter 💻"}
+              title={"Best practices writing Clean Code with Flutter 💻 🧑🏻‍💻"}
+              summary={
+                'Learn how to writing clean code with Flutter and can answer the question: "Why clean code with Flutter"'
+              }
+              time={"9 min read"}
+              link={
+                "https://dev.to/glopgeek/best-practices-writing-clean-code-with-flutter-501m"
+              }
+            />
+            <FeaturedArticle
+              img={article1}
+              title={"Best practices writing Clean Code with Flutter 💻 🧑🏻‍💻"}
               summary={
                 'Learn how to writing clean code with Flutter and can answer the question: "Why clean code with Flutter"'
               }
@@ -127,7 +138,7 @@ const articles = () => {
           </h2>
           <ul>
             <Article
-              title={"Best practices writing Clean Code with Flutter 💻"}
+              title={"Best practices writing Clean Code with Flutter 💻 🧑🏻‍💻"}
               date={"October 30, 2023"}
               link={
                 "https://dev.to/glopgeek/best-practices-writing-clean-code-with-flutter-501m"
