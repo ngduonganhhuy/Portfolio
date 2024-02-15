@@ -90,7 +90,7 @@ const Project = ({ title, type, img, link, github }) => {
         <FramerImage
           src={img}
           alt={title}
-          className="w-full h-auto shadow-2xl shadow-dark object-cover h-80"
+          className="w-full h-auto shadow-2xl shadow-dark object-cover md:h-80"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.2 }}
           priority

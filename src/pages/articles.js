@@ -4,12 +4,44 @@ import { motion, useMotionValue } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import article1 from "../../public/images/articles/best_practice_writing_clean_code_with_flutter.webp";
 
 const FramerImage = motion(Image);
 
+function useWindowSize() {
+  // Initialize state with undefined width/height so server and client renders match
+  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    // only execute all the code below in client side
+    // Handler to call on window resize
+    function handleResize() {
+      // Set window width/height to state
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+     
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+    
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Empty array ensures that effect is only run on mount
+  return windowSize;
+}
+
 const MovingImg = ({ title, img, link }) => {
+
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const imgRef = useRef(null);
@@ -100,6 +132,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
 };
 
 const articles = () => {
+  const size = useWindowSize();
   return (
     <>
       <Head>
@@ -108,8 +141,8 @@ const articles = () => {
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
-          <AnimatedText text={"Articles"} className="mb-16" />
-          <ul className="grid grid-cols-2 gap-16">
+          <AnimatedText text={"Articles"} className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl" />
+          <ul className="grid grid-cols-2 gap-16 md:grid-cols-1">
             <FeaturedArticle
               img={article1}
               title={"Best practices writing Clean Code with Flutter 💻 🧑🏻‍💻"}
@@ -133,7 +166,9 @@ const articles = () => {
               }
             />
           </ul>
-          <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
+          {
+            size.width > 768 && <>
+             <h2 className="font-bold text-4xl w-full text-center my-16 mt-32">
             All Articles
           </h2>
           <ul>
@@ -146,6 +181,9 @@ const articles = () => {
               img={article1}
             />
           </ul>
+          </>
+          }
+         
         </Layout>
       </main>
     </>

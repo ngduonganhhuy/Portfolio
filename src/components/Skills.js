@@ -37,7 +37,7 @@ const Skills = () => {
         <Skill
           name="HTML"
           x="-20vw"
-          y="2vw"
+          y="5vw"
           url="https://vi.wikipedia.org/wiki/HTML"
         />
         <Skill
@@ -52,7 +52,7 @@ const Skills = () => {
           y="6vw"
           url="https://vi.wikipedia.org/wiki/JavaScript"
         />
-        <Skill name="ReactJS" x="0vw" y="12vw" url="https://react.dev/" />
+        <Skill name="ReactJS" x="-40vw" y="-12vw" url="https://react.dev/" />
         <Skill
           name="ReactNative"
           x="14vw"
@@ -66,13 +66,13 @@ const Skills = () => {
           y="-10vw"
           url="https://www.mongodb.com/"
         />
-        <Skill name="NodeJS" x="-15vw" y="-12vw" url="https://nodejs.org/en" />
+        <Skill name="NodeJS" x="-15vw" y="-20vw" url="https://nodejs.org/en" />
         <Skill name="Dart" x="-30vw" y="12vw" url="https://dart.dev/" />
         <Skill name="Flutter" x="0vw" y="12vw" url="https://flutter.dev/" />
         <Skill
           name="SwiftUI/UIKit"
-          x="30vw"
-          y="12vw"
+          x="-20vw"
+          y="30vw"
           url="https://developer.apple.com/xcode/swiftui/"
         />
       </div>
