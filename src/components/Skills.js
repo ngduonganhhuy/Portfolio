@@ -21,7 +21,7 @@ const Skill = ({ name, x, y, url }) => {
 const Skills = () => {
   return (
     <>
-      <h2 className="font-bold text-8xl mt-64 w-full text-center cursor-pointer dark:text-light md:text-6xl md:mt-32">
+      <h2 className="font-bold text-8xl mt-64 w-full text-center cursor-pointer dark:text-light md:text-6xl xs:text-4xl  md:mt-32">
         Skills
       </h2>
       <div
@@ -71,8 +71,8 @@ const Skills = () => {
         <Skill name="Flutter" x="0vw" y="12vw" url="https://flutter.dev/" />
         <Skill
           name="SwiftUI/UIKit"
-          x="-20vw"
-          y="30vw"
+          x="-30vw"
+          y="20vw"
           url="https://developer.apple.com/xcode/swiftui/"
         />
       </div>
