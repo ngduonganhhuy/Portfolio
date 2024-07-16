@@ -14,9 +14,12 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="google-site-verification"
+          content="KQP-0vi3pV-9FyIzTG4gMTkgDmuaDI45lPE6qteCgjE"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <meta name="google-site-verification" content="KQP-0vi3pV-9FyIzTG4gMTkgDmuaDI45lPE6qteCgjE" />
       <main
         className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}
       >
